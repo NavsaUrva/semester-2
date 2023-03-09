@@ -17,6 +17,7 @@
 </form>
 
 <?php
+error_reporting(0);
 $nama = $_POST ['nama'];
 $nilai_uts = $_POST ['nilai_uts'];
 $nilai_uas = $_POST ['nilai_uas'];
@@ -54,7 +55,7 @@ else $grade = "";
   default: $predikat = '' ;
  }
  if(isset($tombol)) { ?>
-
+ 
  Nama Siswa : <?= $nama ?><br>
  Nilai UTS : <?= $nilai_uts ?><br>
  Nilai UAS : <?= $nilai_uas ?><br>
